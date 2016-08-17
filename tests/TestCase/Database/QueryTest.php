@@ -2852,8 +2852,8 @@ class QueryTest extends TestCase
     /**
      * Inserting nothing should not generate an error.
      *
-     * @expectedException \RuntimeException
-     * @expectedExceptionMessage At least 1 column is required to perform an insert.
+     * @_expectedException \RuntimeException
+     * @_expectedExceptionMessage At least 1 column is required to perform an insert.
      * @return void
      */
     public function testInsertNothing()

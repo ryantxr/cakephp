@@ -1723,7 +1723,7 @@ class TableTest extends TestCase
     }
 
     /**
-     * Test that saving a new empty entity does nothing.
+     * Test that saving a new empty entity works.
      *
      * @group save
      * @return void
@@ -1732,7 +1732,7 @@ class TableTest extends TestCase
     {
         $entity = new \Cake\ORM\Entity();
         $table = TableRegistry::get('users');
-        $this->assertFalse($table->save($entity));
+        $this->assertTrue($table->save($entity));
     }
 
     /**
