@@ -1338,9 +1338,6 @@ class Query implements ExpressionInterface, IteratorAggregate
      */
     public function insert(array $columns, array $types = [])
     {
-        if (empty($columns)) {
-            throw new RuntimeException('At least 1 column is required to perform an insert.');
-        }
         $this->_dirty();
         $this->_type = 'insert';
         $this->_parts['insert'][1] = $columns;

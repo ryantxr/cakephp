@@ -1656,9 +1656,6 @@ class Table implements RepositoryInterface, EventListenerInterface, EventDispatc
         }
 
         $success = false;
-        if (empty($data)) {
-            return $success;
-        }
 
         $statement = $this->query()->insert(array_keys($data))
             ->values($data)
