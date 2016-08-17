@@ -1732,7 +1732,7 @@ class TableTest extends TestCase
     {
         $entity = new \Cake\ORM\Entity();
         $table = TableRegistry::get('users');
-        $this->assertTrue($table->save($entity));
+        $this->assertTrue($table->save($entity) !== false);
     }
 
     /**
